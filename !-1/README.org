@@ -7,7 +7,15 @@
 
 See [[https://redd.it/55nior]].
 
-** Solution
+** Solutions
+
+|---------+----------|
+| Program | Size (B) |
+|---------+----------|
+| 0.c     |      133 |
+| 1.c     |      131 |
+| 2.c     |      106 |
+|---------+----------|
 
 #+BEGIN_EXAMPLE
   $ make 2 && ./2 < input.txt
