@@ -1,1 +1,1 @@
-f(i){int j=1;for(;!(i%j);i/=j++);return 1/i*--j;}main(i){for(;~scanf("%d",&i);printf("%d ",i),printf(f(i)?"= %d!\n":" NONE\n",f(i)));}
+f(i){int j=1;for(;i%j<1;i/=j++);return 1/i*--j;}main(i){for(;~scanf("%d",&i);printf("%d ",i),printf(f(i)?"= %d!\n":" NONE\n",f(i)));}
