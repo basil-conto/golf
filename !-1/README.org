@@ -3,11 +3,11 @@
 #+EMAIL:  contovob@tcd.ie
 #+DATE:   <2016-11-08 Tue 08:00>
 
-* Problem
+** Problem
 
 See [[https://redd.it/55nior]].
 
-* Solution
+** Solution
 
 #+BEGIN_EXAMPLE
   $ make 2 && ./2 < input.txt
