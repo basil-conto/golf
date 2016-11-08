@@ -1,0 +1,1 @@
+main(i,j){for(;~scanf("%d",&i);printf(i-1?" NONE\n":"= %d!\n",j-1))for(printf("%d ",i),j=1;i%j<1;i/=j++);}

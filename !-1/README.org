@@ -1,0 +1,44 @@
+#+TITLE:  Inverse Factorial
+#+AUTHOR: Basil L. Contovounesios
+#+EMAIL:  contovob@tcd.ie
+#+DATE:   <2016-11-08 Tue 08:00>
+
+* Problem
+
+See [[https://redd.it/55nior]].
+
+* Solution
+
+#+BEGIN_EXAMPLE
+  $ make 2 && ./2 < input.txt
+  cc -w    2.c   -o 2
+  3628800 = 10!
+  479001600 = 12!
+  6 = 3!
+  18  NONE
+  1 = 1!
+  2 = 2!
+  3  NONE
+  4  NONE
+  5  NONE
+  6 = 3!
+  7  NONE
+  8  NONE
+  9  NONE
+  10  NONE
+  11  NONE
+  12  NONE
+  13  NONE
+  14  NONE
+  15  NONE
+  16  NONE
+  17  NONE
+  18  NONE
+  19  NONE
+  20  NONE
+  21  NONE
+  22  NONE
+  23  NONE
+  24 = 4!
+  120 = 5!
+#+END_EXAMPLE
