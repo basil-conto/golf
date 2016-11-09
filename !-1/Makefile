@@ -1,4 +1,4 @@
-CFLAGS += -w
+CFLAGS += -w -ffreestanding
 
 ext    := .c
 bins   := $(basename $(wildcard *$(ext)))
