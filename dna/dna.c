@@ -1,0 +1,1 @@
+main(){for(;;)putchar(*("ACGT"+rand()%4));}
