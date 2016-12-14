@@ -1,0 +1,90 @@
+#+TITLE:  Sinusoid
+#+AUTHOR: Basil L. Contovounesios
+#+EMAIL:  contovob@tcd.ie
+#+DATE:   <2016-12-14 Wed 07:47>
+
+** Problem
+
+Draw a wave in ASCII.
+
+** Solution
+
+Size: 58B
+
+** Execution
+
+The value ~N~ is the increment step of the input to the sine function. This can
+either be substituted directly in the source file, or defined as a macro
+argument to the preprocessor, e.g. ~-DN=<step>~. The accompanying Makefile
+defines targets with some interesting unibyte values for ~N~:
+
+|-----+--------------+-----------------+------------------------|
+| ~N~ | Make target  | Shape           | Approx. Period (Lines) |
+|-----+--------------+-----------------+------------------------|
+|   3 | ~wave-helix~ | 2D double helix |                     44 |
+|   6 | ~wave-long~  | Sinusoid        |                     22 |
+|   7 | ~wave-short~ | Sinusoid        |                      9 |
+|-----+--------------+-----------------+------------------------|
+
+#+BEGIN_EXAMPLE
+  $ make && ./wave-helix
+  cc -w -DN=3   wave.c -lm -o wave-helix
+          #
+                      #
+            #
+                    #
+              #
+                  #
+                #
+               #
+                   #
+             #
+                     #
+           #
+                      #
+          #
+                        #
+         #
+                        #
+         #
+                        #
+         #
+                        #
+          #
+                       #
+           #
+                     #
+             #
+                   #
+               #
+                 #
+                 #
+               #
+                    #
+            #
+                     #
+           #
+                       #
+         #
+                        #
+         #
+                        #
+         #
+                        #
+         #
+                       #
+          #
+                      #
+            #
+                    #
+              #
+                  #
+                #
+                #
+                  #
+              #
+                    #
+            #
+                      #
+  # and so on...
+#+END_EXAMPLE

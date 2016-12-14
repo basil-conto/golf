@@ -1,0 +1,1 @@
+main(i){for(;;)printf("%*c\n",(int)(8*(2+sin(i+=N))),35);}
